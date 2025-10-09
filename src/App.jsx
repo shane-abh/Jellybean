@@ -184,8 +184,8 @@ function App() {
         {/* Show target jellybeans during guessing and results phases */}
         {gamePhase !== 'setup' && (
           <div className="mb-6">
-            <h2 className="text-lg font-semibold mb-2 text-center">Target Jellybeans:</h2>
-            <JellybeanDisplay count={targetRandomNumber} showNumber={false} />
+            {/* <h2 className="text-lg font-semibold mb-2 text-center">Target Jellybeans:</h2>
+            <JellybeanDisplay count={targetRandomNumber} showNumber={false} /> */}
           </div>
         )}
         
