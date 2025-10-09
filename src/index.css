@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* ========================================
+   JELLYBEAN GAME CUSTOM ANIMATIONS
+   ======================================== */
+
+/* Floating animation for jellybean circles */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-5px); 
+  }
+}
+
+/* Pulsing glow effect for jellybean circles */
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  }
+  50% { 
+    box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 25px rgba(0,0,0,0.1); 
+  }
+}
+
+/* Combined animation class for gradient circles */
+.gradient-circle {
+  animation: 
+    float 3s ease-in-out infinite, 
+    pulse-glow 2s ease-in-out infinite;
+}
